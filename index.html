@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lendi.ge — ვებსაიტები ბიზნესისთვის</title>
+    <meta
+      name="description"
+      content="Lendi.ge — თანამედროვე, სწრაფი და პროფესიონალური ვებსაიტები მცირე და ახალი ბიზნესებისთვის."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+     HEADER
+========================================= -->
+
+    <header class="header" id="header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">
+          <span class="logo-mark">L</span>
+          <span class="logo-text">Lendi<span>.ge</span></span>
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <a href="#services" data-i18n="nav_services">სერვისები</a>
+          <a href="#pricing" data-i18n="nav_pricing">ფასები</a>
+          <a href="#process" data-i18n="nav_process">როგორ ვმუშაობთ</a>
+          <a href="#why-us" data-i18n="nav_why">რატომ Lendi</a>
+          <a href="#contact" data-i18n="nav_contact">კონტაქტი</a>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Language -->
+          <div class="language-switcher">
+            <button class="language-button" id="languageButton" type="button">
+              <span id="currentLanguage">GE</span>
+              <span class="language-arrow">⌄</span>
+            </button>
+
+            <div class="language-menu" id="languageMenu">
+              <button type="button" data-lang="ka">ქართული</button>
+              <button type="button" data-lang="ru">Русский</button>
+              <button type="button" data-lang="en">English</button>
+            </div>
+          </div>
+
+          <a
+            href="tel:+995598172937"
+            class="header-phone"
+            aria-label="დარეკვა Lendi.ge-ზე"
+          >
+            +995 598 172 937
+          </a>
+
+          <a href="#contact" class="header-cta" data-i18n="nav_cta">
+            შეკვეთა
+          </a>
+
+          <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="მენიუს გახსნა"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================================
+     HERO
+========================================= -->
+
+      <section class="hero" id="home">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="hero_badge">
+                ვებსაიტები ახალი და მზარდი ბიზნესებისთვის
+              </span>
+            </div>
+
+            <h1 data-i18n="hero_title">
+              შენი ბიზნესი იმსახურებს
+              <span>კარგ ვებსაიტს.</span>
+            </h1>
+
+            <p class="hero-description" data-i18n="hero_description">
+              ვქმნით თანამედროვე, სწრაფ და მობილურზე სრულად მორგებულ ვებსაიტებს,
+              რომლებიც შენს ბიზნესს პროფესიონალურად წარმოაჩენს და მომხმარებელს
+              მოქმედებისკენ უბიძგებს.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <span data-i18n="hero_button">შეუკვეთე საიტი</span>
+                <span class="btn-arrow">→</span>
+              </a>
+
+              <a
+                href="https://wa.me/995598172937?text=გამარჯობა%2C%20მინდა%20ვებსაიტის%20შეკვეთა."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+              >
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path
+                    d="M19.11 17.39c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.28-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 0.98-1 2.38s1.03 2.76 1.17 2.95c.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33Z"
+                  />
+                  <path
+                    d="M16 3C8.82 3 3 8.82 3 16c0 2.29.6 4.44 1.74 6.36L3 29l6.82-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.03 0-4.01-.55-5.74-1.59l-.41-.24-4.05 1.01 1.08-3.95-.27-.41A10.96 10.96 0 1 1 16 26.7Z"
+                  />
+                </svg>
+                <span data-i18n="hero_whatsapp">მოგვწერე WhatsApp-ზე</span>
+              </a>
+            </div>
+
+            <div class="hero-trust">
+              <div class="trust-item">
+                <strong>01</strong>
+                <span data-i18n="hero_trust_1">თანამედროვე დიზაინი</span>
+              </div>
+
+              <div class="trust-line"></div>
+
+              <div class="trust-item">
+                <strong>02</strong>
+                <span data-i18n="hero_trust_2">მობილურზე მორგებული</span>
+              </div>
+
+              <div class="trust-line"></div>
+
+              <div class="trust-item">
+                <strong>03</strong>
+                <span data-i18n="hero_trust_3">სწრაფი კომუნიკაცია</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+
+          <div class="hero-visual">
+            <div class="visual-card visual-main">
+              <div class="visual-topbar">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="browser-url">lendi.ge</div>
+              </div>
+
+              <div class="visual-screen">
+                <div class="screen-small-label">YOUR BUSINESS</div>
+
+                <div class="screen-title">
+                  Make your<br />
+                  business <span>visible.</span>
+                </div>
+
+                <div class="screen-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="screen-button">START</div>
+
+                <div class="screen-circle"></div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-price">
+              <span class="floating-icon">₾</span>
+
+              <div>
+                <small data-i18n="visual_from">საიტები</small>
+                <strong>500 ₾</strong>
+              </div>
+            </div>
+
+            <div class="floating-card floating-device">
+              <div class="device-icon">
+                <span></span>
+              </div>
+
+              <div>
+                <strong>Responsive</strong>
+                <small data-i18n="visual_mobile">ყველა მოწყობილობაზე</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     SERVICES
+========================================= -->
+
+      <section class="section services-section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <div class="section-label">
+              <span>01</span>
+              <span data-i18n="services_label">რას ვაკეთებთ</span>
+            </div>
+
+            <h2 data-i18n="services_title">
+              ყველაფერი, რაც კარგ ბიზნეს-საიტს სჭირდება.
+            </h2>
+
+            <p data-i18n="services_description">
+              მარტივი იდეიდან სრულფასოვან ვებსაიტამდე — ყველაფერს ერთ სივრცეში
+              ვაწყობთ.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card service-featured">
+              <div class="service-number">01</div>
+
+              <div class="service-icon">✦</div>
+
+              <h3 data-i18n="service_1_title">ვებსაიტის დიზაინი</h3>
+
+              <p data-i18n="service_1_text">
+                თანამედროვე და ვიზუალურად გამორჩეული დიზაინი, რომელიც შენს
+                ბრენდს პროფესიონალურად წარმოაჩენს.
+              </p>
+
+              <span class="service-arrow">↗</span>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">02</div>
+
+              <div class="service-icon">◈</div>
+
+              <h3 data-i18n="service_2_title">ვებ-დეველოპმენტი</h3>
+
+              <p data-i18n="service_2_text">
+                სწრაფი და ფუნქციური ვებსაიტი, რომელიც კომპიუტერზე, ტაბლეტსა და
+                ტელეფონზე მუშაობს.
+              </p>
+
+              <span class="service-arrow">↗</span>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">03</div>
+
+              <div class="service-icon">◎</div>
+
+              <h3 data-i18n="service_3_title">ბიზნესის ონლაინ-წარმოდგენა</h3>
+
+              <p data-i18n="service_3_text">
+                ვებსაიტი, რომელიც მომხმარებელს მარტივად აჩვენებს ვინ ხარ, რას
+                აკეთებ და როგორ დაგიკავშირდეს.
+              </p>
+
+              <span class="service-arrow">↗</span>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">04</div>
+
+              <div class="service-icon">↯</div>
+
+              <h3 data-i18n="service_4_title">მობილური ოპტიმიზაცია</h3>
+
+              <p data-i18n="service_4_text">
+                ყველა ეკრანის ზომისთვის შექმნილი ინტერფეისი, რომ საიტი ნებისმიერ
+                მოწყობილობაზე კარგად გამოიყურებოდეს.
+              </p>
+
+              <span class="service-arrow">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     PRICING
+========================================= -->
+
+      <section class="section pricing-section" id="pricing">
+        <div class="container">
+          <div class="section-heading pricing-heading">
+            <div class="section-label">
+              <span>02</span>
+              <span data-i18n="pricing_label">ფასები</span>
+            </div>
+
+            <h2 data-i18n="pricing_title">
+              აირჩიე შენი ბიზნესისთვის შესაფერისი პაკეტი.
+            </h2>
+
+            <p data-i18n="pricing_description">
+              გამჭვირვალე ფასები დამატებითი სიურპრიზების გარეშე.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- 500 -->
+
+            <article class="price-card">
+              <div class="price-top">
+                <span class="price-name" data-i18n="price_1_name"> START </span>
+
+                <span class="price-tag">01</span>
+              </div>
+
+              <div class="price">
+                <strong>500</strong>
+                <span>₾</span>
+              </div>
+
+              <p class="price-description" data-i18n="price_1_description">
+                მარტივი და თანამედროვე ვებსაიტი ახალი ბიზნესისთვის.
+              </p>
+
+              <ul class="price-features">
+                <li data-i18n="price_1_feature_1">ერთგვერდიანი საიტი</li>
+                <li data-i18n="price_1_feature_2">თანამედროვე დიზაინი</li>
+                <li data-i18n="price_1_feature_3">მობილურზე ადაპტაცია</li>
+                <li data-i18n="price_1_feature_4">საკონტაქტო ფორმა</li>
+              </ul>
+
+              <a href="#contact" class="price-button">
+                <span data-i18n="price_button">შეკვეთა</span>
+                <span>→</span>
+              </a>
+            </article>
+
+            <!-- 700 -->
+
+            <article class="price-card price-card-popular">
+              <div class="popular-label" data-i18n="popular">
+                ყველაზე პოპულარული
+              </div>
+
+              <div class="price-top">
+                <span class="price-name" data-i18n="price_2_name">
+                  BUSINESS
+                </span>
+
+                <span class="price-tag">02</span>
+              </div>
+
+              <div class="price">
+                <strong>700</strong>
+                <span>₾</span>
+              </div>
+
+              <p class="price-description" data-i18n="price_2_description">
+                სრულყოფილი ბიზნეს-საიტი მეტი შესაძლებლობით.
+              </p>
+
+              <ul class="price-features">
+                <li data-i18n="price_2_feature_1">მრავალსექციური One Page</li>
+                <li data-i18n="price_2_feature_2">უნიკალური დიზაინი</li>
+                <li data-i18n="price_2_feature_3">მობილური ოპტიმიზაცია</li>
+                <li data-i18n="price_2_feature_4">საკონტაქტო ფორმა</li>
+                <li data-i18n="price_2_feature_5">WhatsApp ინტეგრაცია</li>
+              </ul>
+
+              <a href="#contact" class="price-button price-button-main">
+                <span data-i18n="price_button">შეკვეთა</span>
+                <span>→</span>
+              </a>
+            </article>
+
+            <!-- 1000+ -->
+
+            <article class="price-card">
+              <div class="price-top">
+                <span class="price-name" data-i18n="price_3_name">
+                  PREMIUM
+                </span>
+
+                <span class="price-tag">03</span>
+              </div>
+
+              <div class="price">
+                <strong>1000</strong>
+                <span>₾+</span>
+              </div>
+
+              <p class="price-description" data-i18n="price_3_description">
+                ინდივიდუალური გადაწყვეტა უფრო რთული პროექტებისთვის.
+              </p>
+
+              <ul class="price-features">
+                <li data-i18n="price_3_feature_1">ინდივიდუალური დიზაინი</li>
+                <li data-i18n="price_3_feature_2">რთული ფუნქციები</li>
+                <li data-i18n="price_3_feature_3">მორგებული სტრუქტურა</li>
+                <li data-i18n="price_3_feature_4">ინტეგრაციები</li>
+                <li data-i18n="price_3_feature_5">
+                  პროექტის ინდივიდუალური შეფასება
+                </li>
+              </ul>
+
+              <a href="#contact" class="price-button">
+                <span data-i18n="price_button">შეკვეთა</span>
+                <span>→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     PROCESS
+========================================= -->
+
+      <section class="section process-section" id="process">
+        <div class="container">
+          <div class="section-heading">
+            <div class="section-label">
+              <span>03</span>
+              <span data-i18n="process_label">პროცესი</span>
+            </div>
+
+            <h2 data-i18n="process_title">იდეიდან გაშვებამდე — მარტივად.</h2>
+
+            <p data-i18n="process_description">
+              არ არის საჭირო ტექნიკური ცოდნა. ჩვენ ნაბიჯ-ნაბიჯ გაგატარებთ მთელ
+              პროცესში.
+            </p>
+          </div>
+
+          <div class="process-list">
+            <div class="process-item">
+              <div class="process-number">01</div>
+
+              <div class="process-content">
+                <h3 data-i18n="process_1_title">ვსაუბრობთ იდეაზე</h3>
+
+                <p data-i18n="process_1_text">
+                  ვიგებთ შენს ბიზნესს, მიზნებს და იმას, როგორი საიტი გჭირდება.
+                </p>
+              </div>
+
+              <div class="process-arrow">↗</div>
+            </div>
+
+            <div class="process-item">
+              <div class="process-number">02</div>
+
+              <div class="process-content">
+                <h3 data-i18n="process_2_title">ვქმნით დიზაინს</h3>
+
+                <p data-i18n="process_2_text">
+                  ვაწყობთ ვიზუალურ სტრუქტურას და დიზაინს, რომელიც შენს ბიზნესს
+                  შეესაბამება.
+                </p>
+              </div>
+
+              <div class="process-arrow">↗</div>
+            </div>
+
+            <div class="process-item">
+              <div class="process-number">03</div>
+
+              <div class="process-content">
+                <h3 data-i18n="process_3_title">ვაშენებთ საიტს</h3>
+
+                <p data-i18n="process_3_text">
+                  დიზაინს ვაქცევთ სწრაფ და სრულად ფუნქციურ ვებსაიტად.
+                </p>
+              </div>
+
+              <div class="process-arrow">↗</div>
+            </div>
+
+            <div class="process-item">
+              <div class="process-number">04</div>
+
+              <div class="process-content">
+                <h3 data-i18n="process_4_title">ვუშვებთ ონლაინ</h3>
+
+                <p data-i18n="process_4_text">
+                  საბოლოო შემოწმების შემდეგ შენი საიტი მზად არის
+                  მომხმარებლებისთვის.
+                </p>
+              </div>
+
+              <div class="process-arrow">↗</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     WHY LENDI
+========================================= -->
+
+      <section class="section why-section" id="why-us">
+        <div class="container why-grid">
+          <div class="why-content">
+            <div class="section-label">
+              <span>04</span>
+              <span data-i18n="why_label">რატომ Lendi</span>
+            </div>
+
+            <h2 data-i18n="why_title">
+              კარგი საიტი მხოლოდ ლამაზი არ უნდა იყოს.
+            </h2>
+
+            <p data-i18n="why_description">
+              ის უნდა იყოს სწრაფი, მარტივი, გასაგები და მომხმარებელს სწორი
+              მოქმედებისკენ უნდა მიჰყავდეს.
+            </p>
+
+            <a href="#contact" class="text-link">
+              <span data-i18n="why_button">დავიწყოთ პროექტი</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="why-features">
+            <div class="why-feature">
+              <span class="why-feature-icon">01</span>
+
+              <div>
+                <h3 data-i18n="why_1_title">თანამედროვე ვიზუალი</h3>
+
+                <p data-i18n="why_1_text">
+                  სუფთა, თანამედროვე და პროფესიონალური დიზაინი.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature">
+              <span class="why-feature-icon">02</span>
+
+              <div>
+                <h3 data-i18n="why_2_title">სწრაფი კომუნიკაცია</h3>
+
+                <p data-i18n="why_2_text">
+                  მარტივი კომუნიკაცია ტელეფონით და WhatsApp-ით.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature">
+              <span class="why-feature-icon">03</span>
+
+              <div>
+                <h3 data-i18n="why_3_title">მობილურზე სრულად მორგებული</h3>
+
+                <p data-i18n="why_3_text">
+                  საიტი კარგად მუშაობს ტელეფონზე, ტაბლეტსა და კომპიუტერზე.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature">
+              <span class="why-feature-icon">04</span>
+
+              <div>
+                <h3 data-i18n="why_4_title">ბიზნესზე ორიენტირებული</h3>
+
+                <p data-i18n="why_4_text">
+                  დიზაინი და სტრუქტურა იქმნება არა მხოლოდ სილამაზისთვის, არამედ
+                  შედეგისთვის.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     CONTACT
+========================================= -->
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <div class="section-label contact-label">
+                <span>05</span>
+                <span data-i18n="contact_label">დაგვიკავშირდი</span>
+              </div>
+
+              <h2 data-i18n="contact_title">
+                გაქვს იდეა?
+                <span>მოდი დავიწყოთ.</span>
+              </h2>
+
+              <p data-i18n="contact_description">
+                მოგვწერე რამდენიმე სიტყვით შენს ბიზნესზე და დაგიკავშირდებით
+                პროექტის დეტალების განსახილველად.
+              </p>
+
+              <div class="contact-methods">
+                <a href="tel:+995598172937" class="contact-method">
+                  <div class="contact-method-icon phone-icon">☎</div>
+
+                  <div>
+                    <small data-i18n="contact_phone_label"> დაგვირეკე </small>
+
+                    <strong> +995 598 172 937 </strong>
+                  </div>
+                </a>
+
+                <a
+                  href="https://wa.me/995598172937?text=გამარჯობა%2C%20მინდა%20ვებსაიტის%20შეკვეთა."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-method"
+                >
+                  <div class="contact-method-icon whatsapp-icon">
+                    <svg viewBox="0 0 32 32" aria-hidden="true">
+                      <path
+                        d="M19.11 17.39c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.28-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 0.98-1 2.38s1.03 2.76 1.17 2.95c.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33Z"
+                      />
+                      <path
+                        d="M16 3C8.82 3 3 8.82 3 16c0 2.29.6 4.44 1.74 6.36L3 29l6.82-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.03 0-4.01-.55-5.74-1.59l-.41-.24-4.05 1.01 1.08-3.95-.27-.41A10.96 10.96 0 1 1 16 26.7Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <small data-i18n="contact_whatsapp_label">
+                      მოგვწერე WhatsApp-ზე
+                    </small>
+
+                    <strong> +995 598 172 937 </strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-header">
+                <span data-i18n="form_title"> მოგვწერე </span>
+
+                <span class="form-required"> * </span>
+              </div>
+
+              <div class="form-group">
+                <label for="name" data-i18n="form_name"> სახელი </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  data-i18n-placeholder="form_name_placeholder"
+                  placeholder="შენი სახელი"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone" data-i18n="form_phone"> ტელეფონი </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  data-i18n-placeholder="form_phone_placeholder"
+                  placeholder="+995 5XX XX XX XX"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="service" data-i18n="form_service">
+                  რა ტიპის საიტი გჭირდება?
+                </label>
+
+                <select id="service" name="service" required>
+                  <option value="" data-i18n="form_service_default">
+                    აირჩიე
+                  </option>
+
+                  <option value="500" data-i18n="form_service_1">
+                    Start — 500 ₾
+                  </option>
+
+                  <option value="700" data-i18n="form_service_2">
+                    Business — 700 ₾
+                  </option>
+
+                  <option value="1000+" data-i18n="form_service_3">
+                    Premium — 1000 ₾+
+                  </option>
+
+                  <option value="custom" data-i18n="form_service_4">
+                    ინდივიდუალური პროექტი
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="form_message">
+                  მოკლე აღწერა
+                </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  data-i18n-placeholder="form_message_placeholder"
+                  placeholder="მოგვიყევი შენი ბიზნესისა და სასურველი საიტის შესახებ..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">
+                <span data-i18n="form_submit"> გაგზავნა WhatsApp-ზე </span>
+
+                <span>→</span>
+              </button>
+
+              <p class="form-note" data-i18n="form_note">
+                ფორმის გაგზავნის შემდეგ WhatsApp გაიხსნება შევსებული
+                შეტყობინებით.
+              </p>
+
+              <div class="form-success" id="formSuccess">
+                <span>✓</span>
+                <span data-i18n="form_success">
+                  შეტყობინება მზად არის გასაგზავნად.
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================
+     FOOTER
+========================================= -->
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark">L</span>
+          <span class="logo-text">Lendi<span>.ge</span></span>
+        </a>
+
+        <p data-i18n="footer_text">
+          თანამედროვე ვებსაიტები თანამედროვე ბიზნესისთვის.
+        </p>
+
+        <div class="footer-links">
+          <a href="#services" data-i18n="nav_services"> სერვისები </a>
+
+          <a href="#pricing" data-i18n="nav_pricing"> ფასები </a>
+
+          <a href="#contact" data-i18n="nav_contact"> კონტაქტი </a>
+        </div>
+
+        <div class="footer-bottom">
+          <span> © <span id="currentYear"></span> Lendi.ge </span>
+
+          <a href="tel:+995598172937"> +995 598 172 937 </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================
+     FLOATING WHATSAPP
+========================================= -->
+
+    <a
+      href="https://wa.me/995598172937?text=გამარჯობა%2C%20მინდა%20ვებსაიტის%20შეკვეთა."
+      class="floating-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="მოგვწერე WhatsApp-ზე"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          d="M19.11 17.39c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.28-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 0.98-1 2.38s1.03 2.76 1.17 2.95c.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33Z"
+        />
+        <path
+          d="M16 3C8.82 3 3 8.82 3 16c0 2.29.6 4.44 1.74 6.36L3 29l6.82-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.03 0-4.01-.55-5.74-1.59l-.41-.24-4.05 1.01 1.08-3.95-.27-.41A10.96 10.96 0 1 1 16 26.7Z"
+        />
+      </svg>
+
+      <span data-i18n="floating_whatsapp"> მოგვწერე </span>
+    </a>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
